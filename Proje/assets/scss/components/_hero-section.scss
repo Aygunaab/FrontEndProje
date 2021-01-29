@@ -3,9 +3,17 @@
     padding: 80px 0;
     position: relative;
     background-color:#F7F7F7 ;
+@media screen and (max-width: 480px) {
+    padding-bottom: 20px;
+    width: 100%;
+}
 
     .hero-content{
         padding: 150px 0 70px;
+        @media screen and (max-width: 480px) {
+          text-align: center;
+          padding: 170px 0px 60px;
+        }
         .hero-tag{
             padding-right: 30px;
             border-radius: 40px;
@@ -32,14 +40,23 @@
                 
             } 
          }
-         h1{
-             font-size: 59px;
-             font-weight: 700;
-             line-height: 1.5;
-             color:$title-color;
-             font-family: $secondary-font;
-             margin: 0;
-         }
+        h1{
+            color:$title-color;
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 1.2;
+            padding-bottom: 35px;
+            font-family: $secondary-font;
+            @media screen and (max-width: 480px) {
+            font-size: 36px;
+            padding-bottom: 20px;
+            }
+
+            span{
+                color: $premiery-color
+            }
+        }
+         
          p{
              font-size: 20px;
              line-height: 1.6;
@@ -48,7 +65,7 @@
          }
          .hero-mark{
             bottom: -40px;
-            opacity: 0.07;
+            opacity: 0.05;
             z-index: 99;
             line-height: 1;
             color: #00003d;
@@ -59,6 +76,13 @@
          }
          .hero-btn-wrap{
            display: flex;
+           position: relative;
+           z-index: 999;
+           @media screen and (max-width: 480px){
+             display: flex;
+             justify-content: center;
+           }
+       
              .hero-btn{
                  margin-right:15px;
                  a{
@@ -84,10 +108,11 @@
                  border-radius: 100%;
                  transition: 0.3s all ease-in-out;
                  background-color:$premiery-color;
+                
 
                  .video-box{
                    .video-btn-border{
-                   
+                   text-transform: uppercase;
                    }
                  }
              }
