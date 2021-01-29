@@ -15,32 +15,6 @@ body .float-left {
   float: left;
 }
 
-body .form-control:focus,
-body button:visited,
-body button.active,
-body button:hover,
-body button:focus,
-body input:visited,
-body input.active,
-body input:hover,
-body input:focus,
-body textarea:hover,
-body textarea:focus,
-body a:hover,
-body a:focus,
-body a:visited,
-body a.active,
-body select,
-body select:hover,
-body select:focus,
-body select:visited {
-  outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  text-decoration: none;
-  color: inherit;
-}
-
 body img {
   width: 100%;
   height: auto;
@@ -129,12 +103,13 @@ body img {
 }
 
 .hero {
-  padding: 150px 0;
+  padding: 80px 0;
   position: relative;
+  background-color: #F7F7F7;
 }
 
 .hero .hero-content {
-  padding: 150px 0 100px;
+  padding: 150px 0 70px;
 }
 
 .hero .hero-content .hero-tag {
@@ -161,6 +136,70 @@ body img {
   font-weight: 500;
   padding-bottom: 0;
   display: inline-block !important;
+}
+
+.hero .hero-content h1 {
+  font-size: 59px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #000000;
+  font-family: "Fira Sans", sans-serif;
+  margin: 0;
+}
+
+.hero .hero-content p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #666666;
+  padding-bottom: 40px;
+}
+
+.hero .hero-content .hero-mark {
+  bottom: -40px;
+  opacity: 0.07;
+  z-index: 99;
+  line-height: 1;
+  color: #00003d;
+  font-weight: 700;
+  font-size: 265px;
+  position: absolute;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.hero .hero-content .hero-btn-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero .hero-content .hero-btn-wrap .hero-btn {
+  margin-right: 15px;
+}
+
+.hero .hero-content .hero-btn-wrap .hero-btn a {
+  color: #fff;
+  width: 160px;
+  height: 55px;
+  display: block;
+  overflow: hidden;
+  font-weight: 700;
+  line-height: 55px;
+  border-radius: 40px;
+  background-color: #ff5520;
+  text-decoration: none;
+}
+
+.hero .hero-content .hero-btn-wrap .hero-media {
+  margin: 20px;
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+  line-height: 50px;
+  border-radius: 100%;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  background-color: #0000fe;
 }
 
 .hero .image-col {
