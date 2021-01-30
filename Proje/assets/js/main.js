@@ -1,23 +1,10 @@
-$(document).ready(function(){
-     $('.owl-carousel').owlCarousel({
-         dots:true,
-         loop:true,
-         margin:10,
-         responsiveClass:true,
-         responsive:{
-        0:{
-            items:1,
-            nav:true
-        },
-        600:{
-            items:3,
-            nav:false
-        },
-        1000:{
-            items:5,
-            nav:true,
-            loop:false
-        }
-    }
-})
-});
+
+			jQuery('.owl-stage-outer').owlCarousel({
+                items: 1,
+                loop: true,
+                nav: true,
+                dots: false,
+                autoplay: true,
+                navSpeed: 1000,
+                smartSpeed: 2000,
+            });
