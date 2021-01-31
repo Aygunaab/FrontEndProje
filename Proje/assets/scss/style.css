@@ -99,11 +99,6 @@ body .float-left {
   float: left;
 }
 
-body img {
-  width: 100%;
-  height: auto;
-}
-
 body section {
   overflow: hidden;
 }
@@ -603,6 +598,10 @@ body section {
 .courses .populare-course-cards .card-image-text img {
   -webkit-transition: 0.9 s all ease-in-out;
   transition: 0.9 s all ease-in-out;
+}
+
+.courses .populare-course-cards .card-image-text:hover .card-image {
+  overflow: hidden;
 }
 
 .courses .populare-course-cards .card-image-text:hover .card-image img {
