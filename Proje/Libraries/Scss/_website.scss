@@ -246,3 +246,81 @@
       }
     }
     }
+
+/*Html Instructor details end*/
+/*Html Instructor start*/
+.instructor-img-text {
+    &:hover{
+        .instructor-text{
+            background-color: $orange-color;
+            &::after{
+                background-color:#f7815d; 
+            }
+            h3 {
+                color: $white;
+            }
+            .ins-degi{
+                color: $white;
+            }
+            .ins-course-no{
+                color:$white;
+            }
+        }
+        }
+    }
+.instructor-img {
+    width: 160px;
+    z-index: 3;
+    height: 160px;
+    bottom: -50px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 100%;
+    box-shadow: 0px 6px 42px 0px rgba(4, 4, 97, 0.12);
+  }
+  .instructor-text {
+    border-radius: 6px;
+    padding: 70px 15px 30px;
+    background-color:$white;
+    z-index: 2;
+    box-shadow: 0px 6px 38px 0px rgba(0, 0, 0, 0.04);
+    transition: 0.4s all ease-in-out;
+    &::after{
+        left: 0;
+        right: 0;
+        width: 90%;
+        content: "";
+        height: 10px;
+        z-index: -1;
+        bottom: -8px;
+        margin: 0 auto;
+        position: absolute;
+        border-radius: 6px;
+        background-color: #fbfbff;
+        transition: 0.4s all ease-in-out;
+          
+    }
+    h3{
+        
+       color: $dark-color;
+       font-size: 20px;
+       font-weight: 700;
+       transition: 0.4s all ease-in-out;
+          
+    }
+    span{
+        display: block;
+        font-size: 14px;
+        transition: 0.4s all ease-in-out;
+    }
+    .ins-degi{
+        color: $dark-color;
+        font-weight: 700;
+        padding: 5px 0px;
+       font-family: $secondary-font;
+    }
+    .ins-course-no {
+        color: #888888;
+  }
+}
+/*Html Instructor end*/
