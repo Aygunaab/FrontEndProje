@@ -1,0 +1,192 @@
+/*Html Contact Style start*/
+.contact-section{
+
+    padding: 100px 0px;
+    background-color: #f2f2f4;
+    .contact-title{
+        margin-top:40px;
+        
+    }
+    .content-top{
+        padding: 50px;
+        border-radius: 10px;
+        background-color: $white;
+        @media screen and (max-width: 991px){
+         margin-bottom: 30px;
+        }
+
+        .content-icon{
+            margin-bottom: 28px;
+        }
+        .content-text{
+            h3{
+                color:$dark-color;
+                font-size: 20px;
+                font-weight: 700;
+                padding-bottom: 10px;
+            }
+            span{
+                font-size: 18px;
+                display: block;
+            }
+        }
+        .contact-form{
+            padding: 40px;
+            background-color: $white;
+            h3{
+                font-size: 40px;
+                color: $dark-color;
+            }
+        }
+        
+    }
+    
+    .contact-form{
+        margin-top:90px;
+        @media screen and (max-width: 570px){
+            margin-top: 20px;
+        }
+        h3{
+            font-size: 40px;
+            color: $dark-color;
+            text-align: center;
+            @media screen and (max-width: 570px){
+                font-size: 30px;
+            }
+        }
+        .contact-form-area{
+            padding: 40px;
+            background-color: $white;
+            @media screen and (max-width: 570px){
+                padding: 40px 15px;
+            }
+
+            .contact-form-input{
+               margin-bottom: 30px;
+                input{
+                    height: 50px;
+                    width: 340px;
+                    border: none;
+                    margin: 0px 15px;
+                    padding-left: 20px;
+                    border-radius: 8px;
+                    background-color: #efeff0;
+                    @media screen and (max-width: 991px) {
+                          margin-bottom: 10px;
+                        }
+                   @media screen and (max-width: 800px) {
+                              width: 100%;  
+                   }
+                }       
+            }
+            textarea{
+                width: 100%;
+                border: none;
+                height: 170px;
+                padding: 20px;
+                margin-top: 30px;
+                border-radius: 8px;
+                background-color: #efeff0;
+            
+            }
+            button{
+                color:$white;
+                width: 100%;
+                border: none;
+                height: 50px;
+                margin-top: 20px;
+                border-radius: 8px;
+                font-weight: 700;
+                background-color:$primary-color
+            }
+
+
+        }
+    }
+}
+/*Html Contact Style end*/
+/*Html Instructor details start*/
+.instructor-content{
+    padding: 35px;
+    border-radius: 10px;
+    background-color:$white;
+    box-shadow: 0px 6px 38px 0px rgba(0, 0, 0, 0.4);
+    &::after{
+        left: 0;
+        right: 0;
+        width: 97%;
+        content: "";
+        height: 15px;
+        bottom: -15px;
+        margin: 0 auto;
+        position: absolute;
+        border-radius: 10px;
+        background-color: #f6f6fa
+    }
+    .instructor-details-img{
+        width: 370px;
+        height: 370px;
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 100%;
+        box-shadow: 0px 6px 38px 0px rgba(0, 0, 0, 0.12);
+        }
+        .instructor-details-text{
+            padding-top: 10px;
+        .instructor-details-title{
+            .instructor-details-name{
+                display: inline-block;
+            
+            }
+            h3{
+                color: $dark-color;
+                font-size: 30px;
+                font-weight: 700;
+                padding-bottom: 5px;
+            }
+            span{
+                display: block;
+                font-size: 18px;
+                font-weight: 300;
+                font-family: $secondary-font;
+                color: $gray;
+               i{
+                margin-right: 10px;
+                color:$primary-color;
+               }
+            }
+            .instructor-details-social{
+                
+                margin-top:10px;
+                a{
+                    font-size: 18px;
+                    margin-right: 15px;
+                    &:nth-child(1){
+                        color: #3b5998;
+                    }
+                    &:nth-child(2){
+                        color: #1da1f2; ;
+                    }
+                    &:nth-child(3){
+                        color:#0077b5; 
+                    }
+                    &:nth-child(4){
+                        color: #5973e9;
+                    }
+                }
+
+            }
+            .instructor-details-profile{
+                width: 270px;
+                padding: 18px;
+                border-radius: 3px;
+                border: 2px solid #d1d1d3;
+                float:right;
+            }
+        }
+    
+
+        }
+}
+
+
