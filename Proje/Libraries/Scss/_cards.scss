@@ -30,6 +30,7 @@
             border-radius: 5px;
             overflow: hidden;
             img{
+                width: 100%;
                 transition: 0.5s all ease-in-out;
             }
         }
@@ -39,7 +40,7 @@
                 span{
                     color: $gray-color;
                     font-size: 18px;
-                    margin-right: 12px;
+                    margin-right: auto;
                 }
                 del{
                     margin-right:12px;
