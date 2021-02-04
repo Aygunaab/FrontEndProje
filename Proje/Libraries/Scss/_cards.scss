@@ -171,16 +171,16 @@
     /*card testimonials end*/
     /*card Read More start*/
     .ReadMore-card{
-    margin: 0 auto;
-    max-width: 370px;
+    max-width: 100%;
     margin-bottom: 40px;
-    background-color: #fff;
-    transition: 0.3s all ease-in-out;
+    transition: 0.1s all ease-in-out;
+    
     &:hover{
         box-shadow: 0px 43px 35px 0px rgba(0 ,0 , 0, 0.06);
         img{
-            
+            transition: 0.4s all ease-in-out;
             transform: scale(1.1) rotate(5deg);  
+           
         }
         a{
             color:$orange-color;
@@ -192,6 +192,7 @@
             position: relative;
           overflow: hidden;
           img{
+              width: 100%;
               &::after{
                 top: 0;
                 left: 0;

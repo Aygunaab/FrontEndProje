@@ -324,3 +324,23 @@
   }
 }
 /*Html Instructor end*/
+.pagination{
+    ul{
+        li{
+            a{
+                    color:$da;
+                    width: 45px;
+                    height: 45px;
+                    font-size: 18px;
+                    font-weight: 700;
+                    margin: 0px 5px;
+                    line-height: 45px;
+                    display: inline-block;
+                    font-family: $secondary-font;
+                    background-color: $white;
+                    transition: 0.4s all ease-in-out
+            
+            }
+        }
+    }
+}
