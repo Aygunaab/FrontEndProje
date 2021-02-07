@@ -41,7 +41,7 @@ $(function(){
   
   $('.testimonials-slider').owlCarousel({
     items: 4,
-          margin:30,
+          margin:10,
           responsiveClass:true,
           loop: true,
           nav: true,
