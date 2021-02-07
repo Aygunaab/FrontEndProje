@@ -1,10 +1,16 @@
   .popular-course-card{
         padding: 25px;
         border-radius: 10px;
-        margin-bottom: 40px;
         background-color: $white;
         transition: 3s all ease-in-out;
         box-shadow: 0 6px 38px 0 rgba(0,0,0,0.4);
+        width: 100%;
+        @media screen and (max-width: 767px)
+        {
+            margin: 0 auto;
+            max-width: 270px;
+            margin-bottom: 30px;
+        }
         &:hover{
             img{
                 transform: scale(1.1);
@@ -29,6 +35,7 @@
         .card-image{
             border-radius: 5px;
             overflow: hidden;
+           
             img{
                 width: 100%;
                 transition: 0.5s all ease-in-out;
@@ -67,8 +74,10 @@
                     transition: 0.3s all ease-in-out;
                 }
                .top-meta{
+                font-size: 14px;
                 i{
                    color: $primary-color;
+                   
                 }
                }
             }
@@ -79,10 +88,16 @@
                  i{
                     margin-right: 5px;
                     color: #FFC602;
-                   
-                
+                    font-size: 12px;
+                 }
+                 span{
+                     font-size: 16px;
                  }
                 
+                
+                }
+                .p-course-btn{
+                    margin-left: 20px;
                 }
             }
         }
@@ -99,6 +114,7 @@
     padding:20px 25px 20px;
     transition:0.3s all ease-in-out;
     box-shadow:0px 12px 35px 0px rgba(12 ,12, 12 , 0.06);
+    width: 270px;
     &:hover{
         box-shadow:0px 24px 40px 0px rgba(12 ,12, 12 , 0.06);
        .testimonials-icon{
@@ -174,6 +190,7 @@
     max-width: 100%;
     margin-bottom: 40px;
     transition: 0.1s all ease-in-out;
+    width: 370px;
     
     &:hover{
         box-shadow: 0px 43px 35px 0px rgba(0 ,0 , 0, 0.06);
@@ -294,6 +311,73 @@
         
     }
     /*card Read More end*/
+    /*slider-card*/
+    .category-img-text{
+        width: 370px;
+        border-radius: 10px;
+        background-color: #000;
+        padding: 25px 40px 0px;
+        margin-bottom: 35px;
+        @media screen and (max-width: 600px) {
+            width: 100%;
+            
+          }
+        &:hover{
+            .category-img{
+                img{
+                    filter: grayscale(1);
+                }
+            }
+            .category-hover-icon{
+                visibility: visible;
+            }
+        }
+        .category-text-icon{
+            margin-bottom: 15px;
+            .category-icon{
+                line-height: 1;
+                margin-right: 15px;
+                transition: 0.6s cubic-bezier(0.24, 0.74, 0.58, 1);
+                i{
+                    font-size: 45px;
+                    color: #ff5520;
+                }
+
+            }
+        }
+        .category-text{
+            h3{
+                color: #fff;
+                font-size: 24px;
+                font-weight: 700;
+            }
+        }
+        .category-img{
+            img{
+                transition: 0.3s all ease-in-out;
+            }
+        }
+        .category-hover-icon{
+            width: 60px;
+            left: 0;
+            right: 0;
+            height: 60px;
+            bottom: 0px;
+            margin: 0 auto;
+            opacity: 0;
+            visibility: hidden;
+            line-height: 60px;
+            position: absolute;
+            border-radius: 100%;
+            background-color: #0000fe;
+            transition: 0.3s all ease-in-out;
+            &:hover{
+                i{
+                    transform: rotate(130deg);
+                }
+            }
+        }
+        }
     
     
 

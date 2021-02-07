@@ -1,3 +1,226 @@
+/*index style*/
+.slider{
+    .owl-nav{
+        display: none;
+    }
+    .owl-dots{
+     margin-top: 15px;
+     text-align: center;
+     .owl-dot{
+        width: 28px;
+        height: 5px;
+        margin: 0px 5px;
+        cursor: pointer;
+        border-radius: 30%;
+        display: inline-block;
+        background-color: #ececed;
+        transition: 0.3s all ease-in-out;
+                &:active{
+                    width: 38px;
+                    background-color:$primary-color;
+                    transition:0.3s all ease-in-out;
+                }
+            }  
+    }
+}
+.course-section{
+    background-color: #f7f7f7;
+    .course-content{ 
+    .course-btn{
+        color:$white;
+        height: 50px;
+        width: 170px;
+        margin: 0 500px;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 50px;
+        overflow: hidden;
+        border-radius: 40px;
+        background-color: #0000fe;
+        &::after{
+            background-color: $orange-color;
+        }
+        &:hover{
+            i{
+                animation: toBottomFromTop 0.3s forwards;
+            }
+        }
+    }
+    }
+}
+.registration-section {
+    padding-top: 60px;
+    &::before{
+        top: 0;
+        left: 0;
+        width: 100%;
+        content: "";
+        height: 210px;
+        position: absolute;
+        background-color: #f7f7f7;
+    }
+}
+  .registration-content {
+    z-index: 1;
+    padding: 45px;
+    background-color: #fff;
+    box-shadow: -3.285px 20.741px 51px 0px rgba(0, 0, 47, 0.05);
+  .registration-side-img {
+        right: 0;
+        bottom: 0;
+  }
+    &::before{
+        top: 0;
+        left: 0;
+        width: 70%;
+        z-index: -1;
+        content: "";
+        height: 100%;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-image: url(/Libraries/ImageandIcon/image/Index/r-bg.png);
+    
+    }
+    .registration-text {
+        max-width: 450px;
+        h3{
+          font-size: 36px;
+          font-weight: 700;
+          line-height: 1.167;
+          padding-bottom: 20px;
+          color: $white;
+          span{
+              color: $orange-color;
+          }
+        }
+        p{
+            color: #c6c6c6;
+            padding-bottom: 25px;
+        }
+        a{    
+            height: 45px;
+            width: 140px;
+            color: #fff;
+            display: block;
+            font-size: 15px;
+            line-height: 45px;
+            overflow: hidden;
+            font-weight: 700;
+            text-align: center;
+            border-radius: 40px;
+            background-color: #00a4ff;
+
+        }
+    }
+}
+.testimonials-slider{
+    .owl-nav{
+        display: none;
+    }
+    .owl-dots{
+     margin-top: 15px;
+     text-align: center;
+     .owl-dot{
+        width: 28px;
+        height: 5px;
+        margin: 0px 5px;
+        cursor: pointer;
+        border-radius: 30%;
+        display: inline-block;
+        background-color: #ececed;
+        transition: 0.3s all ease-in-out;
+                &:active{
+                    width: 38px;
+                    background-color:$primary-color;
+                    transition:0.3s all ease-in-out;
+                }
+            }  
+    }
+}
+.newslatter-section {
+    z-index: 1;
+    background-color: #f7f7f7;
+    &::before{
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        content: "";
+        width: 100%;
+        height: 70px;
+        position: absolute;
+        background-color:#000A1F;
+    }
+.newslatter-content {
+        border-radius: 5px;
+        padding: 35px 40px;
+        background-color:$dark-color;
+        .newslatter-text-icon{
+        .newslatter-icon {
+          line-height: 1;
+          margin-right: 20px;
+          i{
+            color: #424242;
+            font-size: 60px;
+          }
+        }
+        .newslatter-text{
+            h3{
+                color: #fff;
+                font-size: 30px;
+                font-weight: 700;
+                padding-bottom: 10px;
+            }
+            span{
+                margin-top: -5px;
+                padding-left: 5px;
+                color: #bbbbbb;
+            }
+        }
+    }
+    .newslatter-form {
+        margin-top: 20px;
+        padding-left: 55px;
+        input{
+        height: 48px;
+        width: 100%;
+        border: none;
+        max-width: 320px;
+        padding-left: 20px;
+        background-color: #292929;
+        }
+        button{
+        top: 0;
+        right: 0;
+        padding: 0;
+        color: #fff;
+        border: none;
+        width: 145px;
+        height: 45px;
+        font-size: 14px;
+        font-weight: 700;
+        position: absolute;
+        background-color:$orange-color;
+        transition: 0.3s all ease-in-out;  
+        }
+
+    }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Html Contact Style start*/
 .contact-section{
 
@@ -470,8 +693,5 @@
             transition: all 500ms ease-in-out;
         }
     }
-    .text{
-   
-}
 }
 }

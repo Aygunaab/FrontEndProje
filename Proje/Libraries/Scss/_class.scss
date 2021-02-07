@@ -221,17 +221,17 @@ select:visited {
   overflow: hidden;
   display: inline-block;
   transition: 0.3s all ease-in-out;
-         &::after{
-          top: 0;
-          width: 0;
-          left: -40%;
-          content: "";
-          z-index: -1;
-          height: 100%;
-          position: absolute;
-          transform: skew(50deg);
-          transition-duration: 0.6s;
-          transform-origin: top left;
+  &::after{
+    top: 0;
+    width: 0;
+    left: -40%;
+    content: "";
+    z-index: -1;
+    height: 100%;
+    position: absolute;
+    transform: skew(50deg);
+    transition-duration: 0.6s;
+    transform-origin: top left;
           
           
           
